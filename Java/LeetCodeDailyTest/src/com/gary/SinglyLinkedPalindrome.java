@@ -8,9 +8,17 @@ import java.util.List;
 * */
 
 
-public class Solution {
+class ListNode {
 
-    public static boolean isPalindrome(ListNode head) {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+
+}
+
+public class SinglyLinkedPalindrome {
+
+    public boolean isPalindrome(ListNode head) {
 
         if(head == null){
             return false;
@@ -48,11 +56,15 @@ public class Solution {
 
         public static void main(String [] agrs){
 
+
+
             ListNode listNode2 = new ListNode(2);
             ListNode listNode1 = new ListNode(1);
             listNode1.next = listNode2;
 
-            System.out.println(Solution.isPalindrome(listNode1));
+
+            SinglyLinkedPalindrome slp =new SinglyLinkedPalindrome();
+            System.out.println(slp.isPalindrome(listNode1));
 
         }
 
